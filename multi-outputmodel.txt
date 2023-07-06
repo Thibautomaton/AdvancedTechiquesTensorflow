@@ -1,0 +1,18 @@
+pandas read_excel(URL)
+
+use train_test_split
+
+format output for train
+
+normalization of train and test data
+
+first dense and second dense layers
+
+use 2 outputs y1 from seond layer and y2 from third layers (we can specify specific loss function - here mse for both)
+
+
+model compile specify rootmeansquared error as metrics for both outputs
+
+fit model -> batch_size is 10 and nb epochs is 2000
+
+ 

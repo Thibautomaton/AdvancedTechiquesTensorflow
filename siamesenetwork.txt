@@ -1,0 +1,19 @@
+Siamese network
+
+Create 2 base model with 2 separate inputs. It is suppose to compare similar pictures, used in handwritting recognition, face recognition. 
+We are observing on mnist dataset. 
+The model is composed of 3 dense layers
+
+base_network = initialize_base_network()
+
+input_a = Input(shape=(28, 28, ))
+
+input_b = Input(shape=(28, 28, ))
+
+vec_output_a = base_network(input_a)
+vec_output_b = base_network(input_b)
+
+output = euclidian_distnace -> Lambda( output_a/output_b
+
+model = Model([input_a, input_b], ouput)
+
